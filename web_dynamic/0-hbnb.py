@@ -45,5 +45,6 @@ def hbnb_filters(the_id=None):
 
 if __name__ == "__main__":
     """
-    MAIN Flask App"""
-app.run(host=host, port=port)
+    MAIN Flask App
+    """
+    app.run(host=host, port=port)
