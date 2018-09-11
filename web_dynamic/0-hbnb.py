@@ -35,13 +35,12 @@ def hbnb_filters(the_id=None):
     places = storage.all('Place').values()
     users = dict([user.id, "{} {}".format(user.first_name, user.last_name)]
                  for user in storage.all('User').values())
-    cache_id = uuid.uuid4()
     return render_template('0-hbnb.html',
                            states=states,
                            amens=amens,
                            places=places,
                            users=users,
-                           cache_id=cache_id
+                           cache_id=uuid.uuid4())
 
 if __name__ == "__main__":
     """
