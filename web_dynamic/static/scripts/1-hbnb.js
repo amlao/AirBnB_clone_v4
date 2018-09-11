@@ -15,5 +15,6 @@ $(document).ready(function () {
       $('.amenities h4').text(list.join(', '));
     } else {
        $('.amenities h4').html('&nbsp;');
- });
+    }
+  });
 });
